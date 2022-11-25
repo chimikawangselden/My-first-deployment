@@ -1,0 +1,98 @@
+.form-container {
+    margin: 2rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.division {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    margin: .5rem;
+}
+
+.form-container .desc {
+    color: rgb(80, 80, 80);
+}
+
+.form-container form {
+    padding: 5vh 10vh;
+}
+
+.input-field {
+    margin: 1rem 0;
+}
+
+.form-container input,
+.form-container select {
+    padding: .7rem;
+}
+
+.input-container {
+    display: flex;
+}
+
+.user-input>* {
+    display: block;
+    margin: .5rem 0;
+}
+
+.input-label>* {
+    display: block;
+    color: rgb(92, 92, 92);
+    margin: 1rem 0 1.8rem 0;
+}
+
+.input-label {
+    text-align: right;
+    padding: 0 2rem;
+}
+
+.radio-option {
+    display: flex;
+    padding: .2rem 0;
+    justify-content: space-between;
+}
+
+.radio-button {
+    margin-right: 1rem;
+}
+
+.radio-button label {
+    font-size: 16px;
+}
+
+.form-container button {
+    margin-left: 3rem;
+    padding: .8rem 2rem;
+    color: white;
+    background-color: rgb(31, 31, 143);
+    border: none;
+    transition: 0.3s all;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 122);
+}
+
+.input-box {
+    display: flex;
+}
+
+.input-box p {
+    margin-top: .6rem;
+    color: red;
+    margin-left: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.error-input {
+    border-color: red;
+}

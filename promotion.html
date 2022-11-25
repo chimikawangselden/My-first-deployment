@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="leave.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="promotion.css" />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+    <!-- Boxicons CDN Link -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Promotion Form</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus"></i>
+        <span class="logo_name">Da Himalaya</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotion.html">
+            <i class="bx bx-box"></i>
+            <span class="links_name">Staff Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="leave.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Leave Application</span>
+          </a>
+        </li>
+        <li>
+          <a href="team.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="calender.html" calender>
+            <i class="bx bx-calendar"></i>
+            <span class="links_name">Favourites</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.html">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Staff Services</span>
+        </div>
+        <div class="profile-details">
+          <a href="profile.html"><img src="1.webp" alt="" /></a>
+          <span class="admin_name">Kinley Wangyel</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <div class="home-content">
+        <div class="form-container">
+          <h1>Promotion application form</h1>
+          <div class="division"></div>
+          <p class="desc">
+            ***Please fill in this form with all the required information. ***
+          </p>
+          <form action="" id="promotionForm">
+            <div class="input-container">
+              <div class="input-label">
+                <label for="">Position Applied for:</label>
+                <label for="">Position Title:</label>
+                <label for="">Position level:</label>
+              </div>
+              <div class="user-input">
+                <div class="input-box">
+                  <input type="text" id="position" />
+                  <p class="hide">*Required Field</p>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="position-title" />
+                  <p class="hide">*Required Field</p>
+                </div>
+                <div class="input-box">
+                  <input type="text" id="position-level" />
+                  <p class="hide">*Required Field</p>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="promotionForm.js"></script>
+  </body>
+</html>

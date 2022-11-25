@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="leave.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+    <!-- Boxicons CDN Link -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Leave form</title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class="bx bxl-magento"></i>
+          <span class="logo_name">Da Himalaya</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="active">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="promotion.html">
+              <i class="bx bx-box"></i>
+              <span class="links_name">Staff Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="leave.html" class="active">
+              <i class="bx bx-list-ul"></i>
+              <span class="links_name">Leave Application</span>
+            </a>
+          </li>
+          <li>
+            <a href="team.html">
+              <i class="bx bx-user"></i>
+              <span class="links_name">Team</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-pie-chart-alt-2"></i>
+              <span class="links_name">Setting</span>
+            </a>
+          </li>
+
+          <li class="log_out">
+            <a href="login.html">
+              <i class="bx bx-log-out"></i>
+              <span class="links_name">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Staff Services</span>
+        </div>
+        <div class="profile-details">
+          <a href="profile.html"><img src="1.webp" alt="" /></a>
+          <span class="admin_name">Kinley Wangyel</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+      <div class="home-content">
+        <div class="form-container">
+          <h1>Leave application form</h1>
+          <div class="division"></div>
+          <p class="desc">
+            ***Please select leave category from the drop down list based on the
+            leave you are applying for. Your leave will be approved by the
+            authority based on the category you are applying. If you are
+            applying leave during weekdays means please select category***
+          </p>
+          <form id="leaveForm" action="">
+            <div class="input-container">
+              <div class="input-label">
+                <label for="">Leave Category:</label>
+                <label for="">Supervisor Name:</label>
+                <label for="">Department:</label>
+                <label for="">Start Date</label>
+                <label for="">End Date</label>
+                <label for="">Reasons:</label>
+              </div>
+              <div class="user-input">
+                <select name="" id="leave-type">
+                  <option value="Weekend leave">Weekend leave</option>
+                  <option value="Weekday leave">Weekday leave</option>
+                </select>
+                <div class="input-box">
+                  <input type="text" id="super-name" />
+                  <p class="hide">*Required Field</p>
+                </div>
+                <select name="" id="department">
+                  <option value="Passenger Assistance">
+                    Passenger Assistance
+                  </option>
+                  <option value="Consulting">Consulting</option>
+                  <option value="Marketing and Internal Communication">
+                    Marketing and Internal Communication
+                  </option>
+                  <option value="Leisure">Leisure</option>
+                </select>
+                <div class="input-box">
+                  <input type="date" id="endDate" />
+                  <p class="hide">*Required Field</p>
+                </div>
+                <div class="input-box">
+                  <input type="date" id="startDate" />
+                  <p class="hide">*Required Field</p>
+                </div>
+                <div class="input-box">
+                  <div class="radio-option">
+                    <div class="radio-button">
+                      <input
+                        type="radio"
+                        name="reason"
+                        value="Emergency"
+                        id="Emergency"
+                        checked="true"
+                      />
+                      <label for="Emergency">Emergency</label>
+                    </div>
+                    <div class="radio-button">
+                      <input
+                        type="radio"
+                        name="reason"
+                        value="Annual-Leave"
+                        id="Annual-leave"
+                      />
+                      <label for="Annual-leave">Annual Leave</label>
+                    </div>
+                    <div class="radio-button">
+                      <input
+                        type="radio"
+                        name="reason"
+                        value="others"
+                        id="others"
+                      />
+                      <label for="others">Others</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="leaveform.js"></script>
+  </body>
+</html>
